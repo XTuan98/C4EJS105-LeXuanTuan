@@ -30,3 +30,5 @@ console.log('Ex1');
 console.log('Ex4');
 
 // Let userNhap = prompt('Hi there, welcome to shop admin panel, what do you want(C,R,U,D)');
+
+

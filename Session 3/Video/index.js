@@ -39,22 +39,23 @@
 // movies.splice(i, n);
 // console.log(movies);\
 
-console.log('Init Ex');
-let movies = ['Naruto ','One Piece ','Bleach', 'OnePunch Man','Yugi-Oh','Boruto'];
-console.log(movies);
+// console.log('Init Ex');
+// let movies = ['Naruto ','One Piece ','Bleach', 'OnePunch Man','Yugi-Oh','Boruto'];
+// console.log(movies);
 
-// // let i = 0;
-// // console.log(movies[i]);
-// // let n = movies.length;
-// // console.log(n);
+// // // let i = 0;
+// // // console.log(movies[i]);
+// // // let n = movies.length;
+// // // console.log(n);
 
-// for (let i = 0; i < movies.length; i++) {
+// // for (let i = 0; i < movies.length; i++) {
+// //     console.log(movies[i]);
+// // }
+
+// ////////////////////////console.log('Read All Ex')////////////////
+// console.log('1')
+// for(let i = 0; i < movies.length; i++){
 //     console.log(movies[i]);
 // }
 
-////////////////////////console.log('Read All Ex')////////////////
-console.log('1')
-for(let i = 0; i < movies.length; i++){
-    console.log(movies[i]);
-}
-console.log('')
+
