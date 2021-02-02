@@ -1,0 +1,303 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: black;
+}
+/* ========================= MENU ========================= */
+.header-menu-position {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  align-items: center;
+}
+.left-menu img{
+  width: 100px;
+  margin: 0 5px -10px;
+}
+.left-menu img:hover{
+opacity: 0.75;
+}
+
+nav.left-menu {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;   
+}
+.left-menu a{
+  font-family: "Lobster", cursive;
+  font-weight: lighter;
+  text-decoration: none;
+  text-transform: initial !important;
+  font-size: 25px !important;
+}
+/*  */
+.left-menu-hamburger button{
+  display: none;  
+}
+.left-menu-hamburger button{
+  padding: 8px 15px;
+  color: #ffffff;
+  background-color: #374046;
+  font-weight: lighter;
+  text-decoration: none;
+  text-transform: initial;
+  font-size: 25px;
+  border: none;
+  border-radius: 8px;
+}
+.left-menu-hamburger button:hover{
+  text-shadow: 0 0 15px #ffffff;
+}
+/*  */
+.right-menu {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+.right-menu button{
+  padding: 8px;
+  margin: 0 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+/*=============================== CODE CSS SIGNIN/SIGNUP ======================================*/
+.signup-form,
+.signin-form
+{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:#f44336;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, -2);
+  transition:.5s ; 
+  visibility: hidden;
+  opacity: 0;
+}
+
+.form{
+  width: 500px;
+  padding:20px 50px;
+
+}
+.form .close{
+  text-align: right;
+  cursor: pointer;
+}
+.form .text h1{
+  text-align: center;
+  font-style: italic;
+  margin: 30px 0;
+}
+.form form{
+  display: block;
+  margin: auto;
+} 
+ .form .row{
+  display: flex;
+  justify-content: space-between;
+
+} 
+.form .row input{
+  margin-bottom:0;
+}
+.form .row input :first-child{
+  margin-right: 10px;
+}
+.form .row input :last-child{
+  margin-left: 10px;
+}
+.form form input{
+  width: 100%;
+  display: block;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  padding: 20px 16px ;
+  margin: 20px auto;
+  outline: none;
+}
+
+.signin-form.active,
+.signup-form.active{
+  top: 50%;
+  transition:.5s ;
+  visibility: visible;
+  opacity: 1;
+}
+.container.active{
+  filter:blur(10px);
+  transition: .5s;
+  pointer-events: none;
+}
+.form button {
+	background:#be685b;
+	border: 0;
+	padding: 15px;
+	color: #FFFFFF;
+	width: 100%;
+  }
+  .form button:hover {
+	background: #ec9420;
+  }
+/* =========================================================CODE SIGNIN/SIGNUP======================================================================= */
+.sign-in{
+  background-color: rgb(223, 37, 37);
+}
+.sign-in a{
+  color:#ffffff !important;
+}
+.right-menu a {
+  padding: 7px;
+  text-decoration: none;
+  color: #787878;
+  align-self: center;
+  
+  font-family: "Lobster", cursive;
+  font-weight: lighter;
+  text-decoration: none;
+  text-transform: initial;
+  font-size: 20px;
+}
+
+.right-menu a:hover,
+.links-icons a:hover,
+.left-menu a:hover  {
+  color: #a8bff0;
+  text-shadow: 0 0 15px #ffffff;
+}
+
+.left-menu a {
+  text-decoration: none;
+  color: #787878;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  align-self: center;
+}
+/*======================== TOP button ========================*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  
+  font-family: "Lobster", cursive;
+  font-weight: lighter;
+  text-decoration: none;
+  text-transform: initial;
+  font-size: 25px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+/* ========================= GRID BLOG ========================= */
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  grid-auto-rows: 20px;
+}
+
+/* Non-grid specific CSS */  
+body .grid{
+  margin: 10px;
+	color: #374046;
+	background-color: black;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.15em;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+.item {
+  background-color: #ffffff;
+  margin: auto 3px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #ffffff;
+}
+.item:hover{
+  cursor: pointer;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 15px #ffffff;
+}
+
+.photothumb{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.title {
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.title h3{
+  font-family: "Lobster", cursive;
+  font-weight: lighter;
+  text-decoration: none;
+  text-transform: initial;
+  font-size: 28px;
+  color: #ffffff;
+}
+i{
+  font-family: "Lobster", cursive;
+  font-weight: lighter;
+  text-decoration: none;
+  font-size: 20px !important;
+}
+.title h3:hover{
+  text-shadow: 0 0 15px #ffffff;
+}
+
+.blog .title{
+  background-color: #ff9800;
+}
+
+.photo .title{
+  background-color: #f44336;
+}
+
+.desc{
+  padding: 3px;
+}
+
+.desc img{
+  width: 50%;
+  margin: 0 2px 2px 0;
+  float: left;
+  border-radius: 10px;
+}
+
+.desc p{
+  text-indent: 5px;
+  margin-bottom: 10px; 
+}
+
+@media screen and (max-width: 800px) {
+  nav.left-menu {
+    display: none;
+  }
+  .left-menu-hamburger button{
+    display: block;
+  }
+  
+  .right-menu button{
+    padding: 1px !important;
+    margin: 0 1px !important;
+  }
+}
